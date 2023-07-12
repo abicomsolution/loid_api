@@ -3,7 +3,7 @@ var LoidUser = require("./models/loid_user")
 var MasterPwd = require("./models/masterpwd")
 var Alert = require("./models/alert.js")
 var FbNotificationSubscription = require("./models/fb_notification_subscription")
-
+var _  = require("lodash")
 const argon2 = require("argon2")
 const jwt = require('jsonwebtoken');
 const firebaseAdmin = require('firebase-admin');
@@ -280,7 +280,7 @@ function Controller() {
     this.testSaveAlert = function (res) {
 
         var body = {
-            user_id: "64acea9d51ea2f2cb8addc93",
+            user_id: "64adfaa76f97ea311c326a6a",
             description: "Lock Picking",
             photo_path: "https://tieapp-assets.s3.ap-southeast-1.amazonaws.com/assets/793c637c-5854-4376-b684-2605600e6468.png"
         }
